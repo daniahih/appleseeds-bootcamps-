@@ -1,0 +1,29 @@
+.container{
+    width: 1000px;
+}
+#main-header{
+    margin-top: 10px;
+    font-size: 18px;
+margin-left: 600px;
+}
+ span  img{
+    margin-left: 600px;
+}
+
+.about p{
+ border-width: 2px;
+ border-style: solid;
+ width: 500px;
+ margin-left: 450px;
+}
+
+.links ul li {
+margin-left: 20px;
+float: left;
+display: inline;
+text-decoration: none;
+
+}
+.links h1{
+    font-size: 18px;
+}
