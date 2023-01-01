@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <style>
+        .side-bar{
+            width: 450px;
+            border-width: 2px;
+            border-style: solid;
+             float: right;
+              background-color: red;
+        }
+        .content{
+            width: 450px;
+            border-width: 2px;
+            border-style: solid;
+            background-color: aqua;
+        }
+        /* land-scape */
+
+        @media (min-width:1200px){
+            .side-bar{
+                
+            }
+            
+        }
+          
+      @media (min-width :501px) and (max-width :768px) {
+       
+       .side-bar{
+         display: none;
+       }
+       .content{
+              width: auto ;
+    height:600px;
+
+            }
+
+ }
+/* smart-phone */
+ @media (max-width :500px) {
+   .side-bar{
+    display: none;
+} 
+.content{
+              width: auto ;
+    height:600px;
+
+            }
+
+   }
+    </style>
+    <div class="continer">
+        <section class="side-bar">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Tempora maiores placeat fugiat, perspiciatis provident quo similique sapiente vel quam debitis?</p>
+        </section>
+<section class="content">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, veniam dolores magnam error vero 
+    laudantium impedit repellendus reiciendis. Sint minima iure culpa ea est, quibusdam nihil mollitia 
+    quod pariatur facere, beatae deserunt optio et repudiandae aliquid iusto! 
+    Corrupti quas, earum quia, blanditiis harum repellendus natus autem sit voluptatem iste id!</p>
+</section>
+    </div>
+</body>
+</html>
