@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <style>
+        body{
+           padding: 100px;
+
+        }
+        @media (min-width:1200px){
+           .row{
+ display: flex;
+ flex-direction: row;
+           }
+        }
+        @media (min-width :769px) and (max-width :1200px) {
+      
+            .row{
+ display: flex;
+ background-color:rgb(60, 195, 87);
+ flex-direction: row;
+           }
+
+        }
+
+      
+      @media (min-width :501px) and (max-width :768px) {
+       
+            .row{
+display: flex;
+flex-direction: column;
+background-color: red;
+            }
+      }
+ /* smart-phone */
+      @media (max-width :500px) {
+        .row{
+display: flex;
+flex-direction: column;
+background-color:blue;} 
+        }
+
+.colum-1{
+    border-width: 2px;
+    border-style: solid;
+    width: 450px;
+
+}
+
+.colum-2{
+    border-width: 2px;
+    border-style: solid;
+    width: 450px;
+
+}
+.colum-3{
+    border-width: 2px;
+    border-style: solid;
+    width: 450px;
+
+}
+.colum-4{
+    border-width: 2px;
+    border-style: solid;
+    width: 450px;
+
+}
+     </style>
+    <div class="row">
+    <div class="colum-1">
+<h1> First item</h1>
+<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam repellendus maiores consequatur, 
+    tempore sapiente cum perspiciatis veniam possimus accusamus aut velit quae, quas delectus? Quibusdam et inventore
+     voluptatum exercitationem ratione laborum maiores odio, sed reiciendis minima quo necessitatibus velit nesciunt!</p>
+    </div>
+    <div class="colum-2">
+<h1> secound item</h1>
+<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam repellendus maiores consequatur, 
+    tempore sapiente cum perspiciatis veniam possimus accusamus aut velit quae, quas delectus? Quibusdam et inventore
+     voluptatum exercitationem ratione laborum maiores odio, sed reiciendis minima quo necessitatibus velit nesciunt!</p>
+    </div>
+    <div class="colum-3">
+<h1> third item</h1>
+<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam repellendus maiores consequatur, 
+    tempore sapiente cum perspiciatis veniam possimus accusamus aut velit quae, quas delectus? Quibusdam et inventore
+     voluptatum exercitationem ratione laborum maiores odio, sed reiciendis minima quo necessitatibus velit nesciunt!</p>
+    </div>
+    <div class="colum-4">
+<h1> four item</h1>
+<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam repellendus maiores consequatur, 
+    tempore sapiente cum perspiciatis veniam possimus accusamus aut velit quae, quas delectus? Quibusdam et inventore
+     voluptatum exercitationem ratione laborum maiores odio, sed reiciendis minima quo necessitatibus velit nesciunt!</p>
+    </div></div>
+</body>
+</html>
