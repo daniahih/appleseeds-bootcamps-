@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Tip</title>
+
+    <style>
+        .tooltip {
+            display: inline;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .tooltip:hover:after {
+            
+            background: rgb(255, 255, 28);
+            border-radius: 20%;
+            bottom: 30px;
+            color: blue;
+            content: attr(title);
+            display: block;
+            left: 20px;
+            padding: 10px 10px;
+            position: absolute;
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet asperiores iure non ipsa unde tempora cumque,
+        aliquid quod minima perspiciatis, distinctio consectetur autem totam optio pariatur nobis alias magni nam aut,
+        facilis voluptatibus recusandae earum sunt dolorum. Perspiciatis soluta voluptatibus officiis. Consequuntur
+        minima odit maxime facilis optio veritatis in quo quidem similique rem perspiciatis, vero iusto a! Esse ab ad
+        vel nesciunt quibusdam quaerat .
+        Optio, hic accusantium qui veritatis eveniet <a href="#" class="tooltip" title="this is a tool tip">corporis dolor blanditiis</a> ad dicta deleniti, nostrum, nisi est
+        voluptatum ullam. similique rerum iste
+        obcaecati? Molestiae porro eligendi et, obcaecati, commodi alias numquam
+        modi quam, omnis quisquam quis fugit.</p>
+    <br><br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet asperiores iure non ipsa unde tempora cumque,
+        aliquid quod minima perspiciatis, distinctio consectetur autem totam optio pariatur nobis alias magni nam aut,
+        facilis voluptatibus recusandae earum sunt dolorum. Perspiciatis soluta voluptatibus officiis
+        .<a href="#" class="tooltip" title="this is a tool tip">Consequuntur</a> 
+        minima odit maxime facilis optio veritatis in quo quidem similique rem perspiciatis, vero iusto a! Esse ab ad
+        vel nesciunt quibusdam quaerat corporis
+        Optio, hic accusantium qui veritatis eveniet corporis dolor blanditiis ad dicta deleniti, nostrum, nisi est
+        voluptatum ullam similique rerum iste obcaecati? Molestiae porro eligendi et, obcaecati, commodi alias numquam
+        modi quam, omnis quisquam quis fugit.</p>
+</body>
+
+</html>

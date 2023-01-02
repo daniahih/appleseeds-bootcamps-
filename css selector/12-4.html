@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-4</title>
+</head>
+<style>
+       .parent {
+            background-color: black;
+            color: aliceblue;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            height: 10vh;
+            margin: 100px;
+            padding: 20px;
+        }
+
+        .child {
+            text-align: center;
+            padding: 15px;
+        }
+
+
+        .child::before {
+            content: '';
+            background-color: red;
+            position: absolute;
+            width: 3px;
+            height: 15%;
+            top:30px;
+            left: 80px;
+        }
+
+        .child::after {
+            content: '';
+            background-color: red;
+            position: absolute;
+            width: 7.5%;
+            height: 3px;
+            top:30px;
+            left: 80px;
+        }
+
+        /* .child2::before {
+            content: '';
+            background-color: red;
+            position: absolute;
+            width: 3px;
+            height: 15%;
+            bottom:30px;
+            left: 80px;
+        }
+
+        .child2::after {
+            content: '';
+            background-color: red;
+            position: absolute;
+            width: 7.5%;
+            height: 3px;
+            top:100px;
+            left: 80px;
+        } */
+
+        /* .child3::before {
+            content: '';
+            background-color: red;
+            position: absolute;
+            width: 3px;
+            height: 15%;
+            bottom:30px;
+            left: 230px;
+        }
+
+        .child3::after {
+            content: '';
+            background-color: red;
+            position: absolute;
+            width: 7.5%;
+            height: 3px;
+            top:100px;
+            left: 210px;
+        } */
+
+        .child4::before {
+            content: '';
+            background-color: red;
+            position: absolute;
+            width: 3px;
+            height: 15%;
+            top:30px;
+            left: 230px;
+        }
+
+        .child4::after {
+            content: '';
+            background-color: red;
+            position: absolute;
+            width: 7.5%;
+            height: 3px;
+            top:30px;
+            left: 210px;
+        }
+</style>
+<body>
+    <div class="parent">
+        <h3 class="child">Cool Border</h3>
+        <h3 class="child2"></h3>
+        <h3 class="child3"></h3>
+        <h3 class="child4"></h3>
+
+    </div>
+</body>
+</html>
