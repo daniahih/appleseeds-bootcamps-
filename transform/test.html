@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box-parent {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: relative;
+            transition: width 2s ease-in;
+            
+        }
+
+        .box-parent:hover {
+            width: 0px;
+        }
+        
+
+        .box-parent ::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background-color:blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-parent">
+        <div class="box-child">
+
+        </div>
+    </div>
+</body>
+
+</html>
