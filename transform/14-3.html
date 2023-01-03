@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    .navbar{
+        display: flex;
+        justify-content:space-around;
+        text-align: center;
+        border: 2px solid black;
+        background-color: rgb(106, 196, 196);
+       
+
+    }
+    .navbar a{
+        padding: 20px 20px;
+        display: block;
+        color: white;
+       text-decoration: none;
+       position: relative;
+    }
+     a:after{
+        content:'';
+        position: absolute;
+        background-color: pink;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: transform 1s ease;
+        transform: scaleX(0);
+     }
+
+     a:hover::after{
+        width: 100%;
+        transform: scaleX(1);
+            transform-origin:left ;
+        
+     }
+
+     a::before{
+        content:'';
+        position: absolute;
+        background-color: pink;
+        height: 3px;
+        width: 0;
+        left: 0;
+        top: 5px;
+        transform: scaleX(0);
+        transition: transform 1s ease;
+        
+    
+     }
+
+     a:hover::before{
+        width: 100%;
+        transform: scaleX(1);
+            transform-origin:right ;
+     }
+ </style>
+<body>
+    <div class="navbar">
+        <a href=""> Home</a>
+        <a href=""> About</a>
+        <a href=""> Services</a>
+        <a href=""> portfolio</a>
+        <a href=""> Contact </a>
+    </div>
+    
+</body>
+</html>
