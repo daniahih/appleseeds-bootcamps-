@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* desktop view */
+  
+     .container{
+        display: grid;
+        grid-template-areas: 
+            "header  header header header "
+            "sidebar body  body sidebar2"
+            "sidebar  body  body sidebar2 "
+            " footer   footer footer footer  ";
+            grid-template-columns:repeat(4,360px);
+            grid-template-rows:repeat(4,70px);
+            grid-gap: 0.75rem;
+            text-align: center;
+    }
+    .child-1{
+background-color: red ;
+ border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 1.3rem;
+grid-area: header;
+  border-radius: 20px;
+
+    }
+    .child-2{
+background-color: rgb(52, 52, 212);
+ border: 1px solid rgba(0, 0, 0, 0.8);
+ 
+        font-size: 1.3rem;
+   
+        grid-area: sidebar;
+        border-radius: 20px;
+
+    }
+    .child-3{
+background-color: green;
+ border: 1px solid rgba(0, 0, 0, 0.8);
+ 
+        font-size: 1.3rem;
+        border-radius: 20px;
+        grid-area: body;
+  
+
+    }
+    .child-4{
+background-color:purple;
+ border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 1.3rem;
+        border-radius: 20px;
+       grid-area: sidebar2 ;
+  
+    }
+    .child-5{
+background-color:yellow;
+ border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 1.3rem;
+       grid-area: footer ;
+       border-radius: 20px;
+  
+    }
+    @media (min-width :501px) and (max-width :768px) {
+        .container{
+        display: grid;
+        grid-template-areas: 
+            "header  header  header  header"
+            "sidebar body  body  body"
+            "sidebar  body body body "
+            "sidebar2 sidebar2 sidebar2 sidebar2"
+            " footer  footer  footer footer ";
+            grid-template-columns:repeat(4,130px);
+            grid-template-rows:repeat(5,70px);
+            grid-gap: 0.75rem;
+            text-align: center;
+    }}
+    /* smart-phone */
+ @media (max-width :500px) {
+    .container{
+        display: grid;
+        grid-template-areas: 
+            "header  header"
+            "sidebar sidebar"
+            "body   body "
+            "body   body "
+            "sidebar2 sidebar2"
+            " footer   footer ";
+            grid-template-columns:repeat(2,200px);
+            grid-template-rows:repeat(6,60px);
+            grid-gap: 0.75rem;
+            text-align: center;
+    }
+      }
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="child-1"> Header</div>
+        <div class="child-2"> side bar</div>
+        <div class="child-3"> Content</div>
+        <div class="child-4"> Sidebar-2</div>
+        <div class="child-5"> Footer </div>
+    </div>
+</body>
+</html>
